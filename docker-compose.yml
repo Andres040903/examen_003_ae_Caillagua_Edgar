@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: pg-inventory
+    environment:
+      POSTGRES_DB: inventorydb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432"
